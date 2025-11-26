@@ -1,16 +1,73 @@
-# React + Vite
+# Random String Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Small, fast React + Vite utility that creates customizable random strings (passwords, tokens, test data). Minimal, extendable, and ready for local development or quick deployment.
 
-Currently, two official plugins are available:
+## What this project is
+A single-page tool that generates random strings with options for length and character sets. Built to be lightweight, easy to read, and simple to extend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why use it
+- Quickly produce secure or test-ready random strings
+- Handy for password generation, API tokens, or fixture data
+- Serves as a clean Vite + React starter for utilities
 
-## React Compiler
+## Key features
+- Configurable length
+- Toggle character sets: lowercase, uppercase, numbers, symbols
+- Copy-to-clipboard
+- Fast dev feedback with Vite HMR
+- Small codebase for easy customization
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project structure
+```
+Random-String-Generator/
+├─ index.html
+├─ package.json
+├─ vite.config.js
+├─ eslint.config.js
+└─ src/
+   ├─ main.jsx     # app entry
+   ├─ App.jsx      # UI + generator logic
+   └─ index.css    # styles
+```
 
-## Expanding the ESLint configuration
+## Quick start (Windows)
+1. Open PowerShell or CMD and go to your projects folder:
+   cd c:\Users\Visweswara jeeru\Projects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Clone and install:
+   git clone <repo-url>
+   cd Random-String-Generator
+   npm install
+
+3. Start dev server:
+   npm run dev
+   Open the URL shown in the terminal (usually http://localhost:5173)
+
+## Useful scripts
+- npm run dev — start development server
+- npm run build — create production build (dist/)
+- npm run preview — preview production build
+- npm run lint — run ESLint
+
+## How to use
+1. Set desired length.
+2. Toggle character sets (lower/upper/numbers/symbols).
+3. Click "Generate".
+4. Click "Copy" to copy the result to clipboard.
+
+## Extend ideas
+- Add presets (e.g., strong password, human-readable)
+- Save history to localStorage
+- Add entropy indicator or strength meter
+- Add export (CSV/JSON) or API endpoint
+
+## Troubleshooting
+- Port conflict: npm run dev -- --port 3000
+- Reinstall dependencies: rm -rf node_modules package-lock.json && npm install
+- Styles missing: ensure index.css is imported in main.jsx
+
+## License
+MIT
+
+## Author
+Visweswara Jeeru — Last updated: November 26, 2025
