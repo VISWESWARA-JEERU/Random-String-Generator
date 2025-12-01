@@ -22,7 +22,7 @@ const generateRandomString = () => { // function to generate random string
         <h3 className='font-semibold text-white'>Random String Generator </h3> 
         <div className='flex justify-center items-center gap-x-6 '>
           <input type="number" placeholder ="Enter a number" min="1" className='bg-white rounded-lg h-9 outline-none px-2 text-center'onChange={(e)=>setLength(e.target.value)} />
-          <input type="number" min="1" className='bg-white rounded-lg h-9 outline-none px-2 text-center'onChange={(e)=>setLength(e.target.value)} />
+         
           <button className='p-1.5 bg-blue-500 text-white rounded-lg'onClick={generateRandomString}>Click</button>
         </div>
         <input type="text" className='bg-white rounded-lg h-9 outline-none px-2 text-center w-68' readOnly value={randomString} />
